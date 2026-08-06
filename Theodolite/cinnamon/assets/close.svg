@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Foreground"
+   width="26"
+   height="26"
+   enable-background="new 0 0 16 16"
+   version="1.0"
+   viewBox="0 0 18.909 18.909"
+   sodipodi:docname="close.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="29.346154"
+     inkscape:cx="13.102228"
+     inkscape:cy="13"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Foreground" />
+  <defs
+     id="defs1">
+    <filter
+       id="filter879"
+       x="-0.047999999"
+       y="-0.047999999"
+       width="1.096"
+       height="1.096"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         stdDeviation="0.32"
+         id="feGaussianBlur1" />
+    </filter>
+  </defs>
+  <circle
+     cx="9.4545"
+     cy="10.182"
+     r="8"
+     fill="#000000"
+     filter="url(#filter879)"
+     opacity=".1"
+     stroke-width="0"
+     id="circle1" />
+  <circle
+     cx="9.4545"
+     cy="9.4545"
+     r="8"
+     fill="#f75a61"
+     stroke-width="0"
+     id="circle2"
+     style="fill:#600634;fill-opacity:1.0" />
+  <path
+     style="fill:#f5da91;fill-opacity:1.0;stroke-width:0.034076"
+     d="m 8.2812383,17.99716 c -0.1692034,-0.051 -0.2904127,-0.217576 -0.2904127,-0.39911 0,-0.168706 0.041043,-0.212731 2.4678784,-2.647194 L 12.40344,13.000007 10.578659,11.168418 C 8.1527519,8.73346 7.9567496,8.5279271 7.9567496,8.4190182 c 0,-0.1067415 0.137397,-0.3247795 0.2371743,-0.3763763 0.055111,-0.028499 0.1533603,-0.051816 0.2183322,-0.051816 0.1565911,0 0.2328274,0.07135 2.6368899,2.4678801 l 1.95085,1.944737 1.882702,-1.876153 c 2.243029,-2.2352271 2.593315,-2.5705401 2.685322,-2.5705401 0.145829,0 0.342028,0.1358537 0.408891,0.2831263 0.03566,0.078553 0.06518,0.1696058 0.06559,0.2023392 10e-4,0.08007 -0.401234,0.4986716 -2.586903,2.6921256 l -1.859043,1.865665 1.961877,1.967887 c 2.385193,2.3925 2.450741,2.46263 2.450741,2.622044 0,0.232438 -0.187077,0.419237 -0.419861,0.419237 -0.158435,0 -0.22953,-0.0665 -2.638468,-2.467889 l -1.950859,-1.944746 -2.22355,2.223355 c -1.5141709,1.514039 -2.2452614,2.222521 -2.2916049,2.220737 -0.03743,-0.0014 -0.1290471,-0.021 -0.2035928,-0.04347 z"
+     id="path7"
+     transform="scale(0.72726923)" />
+</svg>
