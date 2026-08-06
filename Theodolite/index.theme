@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Theodolite
+Comment=A Vibrant theme based on Material128.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Theodolite
+MetacityTheme=Theodolite
+IconTheme=Material-DeepOcean
+CursorTheme=Material-DeepOcean
+ButtonLayout=close,minimize,maximize:menu
