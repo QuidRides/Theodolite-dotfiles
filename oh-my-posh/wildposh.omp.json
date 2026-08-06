@@ -1,0 +1,126 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#1E448E",
+          "foreground": "#F5DA91",
+          "leading_diamond": "\ue0b6",
+          "powerline_symbol": "\ue0b0",
+          "style": "diamond",
+          "template": " {{ .UserName }} ",
+          "type": "session"
+        },
+        {
+          "background": "#6A0D3C",
+          "foreground": "#F5DA91",
+          "powerline_symbol": "\ue0b4 ",
+          "options": {
+            "home_icon": "󰭎",
+            "folder_separator_icon": " <transparent>\ue0b1</> ",
+            "folder_icon": "󱕅",
+            "style": "agnoster"
+          },
+          "style": "powerline",
+          "template": " {{ path .Path .Location }} ",
+          "type": "path"
+        },
+        {
+          "background": "#CF8126",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#EAB63E{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFA300{{ end }}",
+            "{{ if gt .Ahead 0 }}#6A0D3C{{ end }}",
+            "{{ if gt .Behind 0 }}#0A6C4C{{ end }}"
+          ],
+          "foreground": "#000000",
+          "powerline_symbol": "\ue0b0",
+          "options": {
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "style": "powerline",
+          "template": " \uf113 {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "#241E3E",
+          "foreground": "#0A6C4C",
+          "leading_diamond": "\ue0b6",
+          "options": {
+            "fetch_package_manager": true,
+            "npm_icon": " <#6A0D3C>\ue5fa</> ",
+            "yarn_icon": " <#2B91AE>\ue6a7</>"
+          },
+          "style": "diamond",
+          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+          "trailing_diamond": "\ue0b4 ",
+          "type": "node"
+        },
+        {
+          "background": "#355EAD",
+          "foreground": "#F3AF5F",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4 ",
+          "type": "python"
+        },
+        {
+          "background": "#F5DA91",
+          "foreground": "#2B91AE",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": "\ue626 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4 ",
+          "type": "go"
+        },
+        {
+          "background": "#0A6C4C",
+          "foreground": "#F5DA91",
+          "background_templates": [
+            "{{ if gt .Code 0 }}#6A0D3C{{ end }}"
+          ],
+          "leading_diamond": "\ue0b6",
+          "options": {
+            "time_format": "_2, 15:04:05"
+          },
+          "style": "diamond",
+          "template": "󰟚 {{ .FormattedMs }} ",
+          "trailing_diamond": "\ue0b4",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#F5DA91",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#6A0D3C{{ end }}"
+          ],
+          "style": "plain",
+          "template": " 󰛓 ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{ .Folder }}",
+  "final_space": true,
+  "osc99": true,
+  "version": 4
+}
+
